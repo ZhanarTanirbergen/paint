@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="page">
+			<div id="menu">
+					<div id="file-upload" class="block">
+						<label>
+							<input type="file" id="img-file"/>
+							<span>Choose image</span>
+						</label>
+						<!-- <a href="#" onclick='$("#file").trigger("click");'>Add Local Image</a>
+			<input type="file" id="file" style="display:none;" -->
+					</div>
+					<div id="tools" class="block">
+						<img id = "pencil" src="img/pencil.png">
+						<img id = "eraser" src="img/eraser.png">
+						<img id = "bucket" src="img/bucket.png">
+						<img id = "selection" src="img/selection.png"">
+						<img id = "palette" src="img/palette.png">
+						<img id = "brush" src="img/brush.png">
+						<img id = "text" src="img/text.png">
+						<img id = "magnifier" src="img/magnifier.png">
+					</div>	
+					<div id = "colors" class="block">
+						<input type="color" name="current-color" value="#fff">	
+						<img id = "backward" src="img/backward.png">
+						<img id = "forward" src="img/forward.png">
+					</div>
+					<div id = "mouse-position" class="block">
+						<p><label>MouseX:</label><label id = "mouseX">0</label></p>
+						<p><label>MouseY:</label><label id = "mouseY">0</label></p>
+					</div>
+					<div id = "filters" class="block">	
+						<div id="menu_body">
+							<ul>
+								<li><a href="#" onclick="openMenu('sub_menu_1');return(false)">Filters</a>
+									<ul id="sub_menu_1">
+										<li><a href="#">Filter №1</a></li>
+										<li><a href="#">Filter №2</a></li>
+										<li><a href="#">Filter №3</a></li>
+										<li><a href="#">Filter №4</a></li>
+										<li><a href="#">Filter №5</a></li>
+										<li><a href="#">Filter №6</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</div>
+
+			</div>	
+			<canvas id="imgCanvas" onmousemove="showCoords(event)" onmouseout="clearCoor()">
+				
+			</canvas>
+		</div>
+	<script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
