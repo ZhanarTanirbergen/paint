@@ -19,14 +19,14 @@
 						<img id = "pencil" src="img/pencil.png">
 						<img id = "eraser" src="img/eraser.png">
 						<img id = "bucket" src="img/bucket.png">
-						<img id = "selection" src="img/selection.png"">
+						<img id = "selection" src="img/selection.png">
 						<img id = "palette" src="img/palette.png">
 						<img id = "brush" src="img/brush.png">
 						<img id = "text" src="img/text.png">
 						<img id = "magnifier" src="img/magnifier.png">
 					</div>	
 					<div id = "colors" class="block">
-						<input type="color" name="current-color" value="#fff">	
+						<input type="color" id = "color" name="current-color" value="#fff">	
 						<img id = "backward" src="img/backward.png">
 						<img id = "forward" src="img/forward.png">
 					</div>
@@ -37,14 +37,17 @@
 					<div id = "filters" class="block">	
 						<div id="menu_body">
 							<ul>
-								<li><a href="#" onclick="openMenu('sub_menu_1');return(false)">Filters</a>
+								<li><a href="#">Filters</a>
 									<ul id="sub_menu_1">
-										<li><a href="#">Filter №1</a></li>
-										<li><a href="#">Filter №2</a></li>
-										<li><a href="#">Filter №3</a></li>
-										<li><a href="#">Filter №4</a></li>
-										<li><a href="#">Filter №5</a></li>
-										<li><a href="#">Filter №6</a></li>
+										<li><a href="#" id = "grayscale">Grayscale</a></li>
+										<li><a href="#" id = "sharpen">Sharpen</a></li>
+										<li><a href="#" id = "sepia">Sepia</a></li>
+										<li><a href="#" id = "brightness">Brightness</a></li>
+										<li><a href="#" id = "treshold">Treshold</a></li>
+										<li><a href="#" id = "blur">Blur</a></li>
+										<li><a href="#" id = "sobel">Sobel</a></li>
+										<li><a href="#" id = "inverse">Inverse</a></li>
+										
 									</ul>
 								</li>
 							</ul>
@@ -60,3 +63,4 @@
     <script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
+<!-- onclick="openMenu('sub_menu_1');return(false)" -->
